@@ -12,7 +12,7 @@ function calculateAgeLog(year) {
     if (calculateAge(year) < 10) {
         console.log('возраст меньше 10 лет');
     } else {
-        console.log('возраст меньше 10 лет');
+        console.log('возраст больше 10 лет');
     }
 }
 
