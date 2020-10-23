@@ -1,21 +1,22 @@
 "use strict";
 
-let num1 = 12;
-let num2 = 8;
+const carName = 'Suzuki';
+const carYear = 2011;
+const personYear = 1992;
 
+function calculateAge (year) {
+    const currentYear = 2020;
+    const result = currentYear - year;
+    return result;
+}
 
-console.log('+', num1 + num2);
-console.log('-', num1 - num2);
-console.log('*', num1 * num2);
-console.log('/', num1 / num2);
+function calculateAgeLog(year) {
+    if (calculateAge(year) < 10) {
+        console.log('возраст меньше 10 лет');
+    } else {
+        console.log('возраст меньше 10 лет');
+    }
+}
 
-
-const str1 = 'Hello ';
-const str2 = 'world';
-
-console.log('+', str1 + str2);
-
-console.log ('1 + 2',1 + '2');
-
-console.log('True + 1', true + 1);
-console.log('false + 1', false + 1);
+calculateAgeLog (carYear);
+calculateAgeLog (personYear);
